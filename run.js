@@ -1,4 +1,4 @@
-const asyncGAPIv2 = ({
+const run = ({
       funcName,
       onFailure = console.error,
       onSuccess,
@@ -21,7 +21,7 @@ const asyncGAPIv2 = ({
     const runAll = async ({
       onFailure = console.error,
       onSuccess,
-      taskMaker = asyncGAPIv2,
+      taskMaker = run,
       tasks = {}
     }) => {
 
